@@ -21,5 +21,5 @@ My guess was the manufacturer might have produced this GPS mouse with a number o
 The fixed image and GPS is being successfully used in an APRS tracker. The image has also successfully be used to update a 2nd Rikaline GPS-6010 serial mouse from SiRF firmware version 2.2.0 to 2.3.1.
 
 Tools used:
-SiRFFlash and SiRFDemo - https://www.falcom.de/support/software-tools/sirf/
-HxD - https://mh-nexus.de/en/hxd/
+SiRFFlash and SiRFDemo - https://www.falcom.de/support/software-tools/sirf/ <br>
+HxD - https://mh-nexus.de/en/hxd/ <br>
