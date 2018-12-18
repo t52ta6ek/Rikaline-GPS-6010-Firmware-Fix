@@ -1,0 +1,110 @@
+;
+; This file contains list of supported devices
+;
+; Note: Chips marked with (*) have not been tested by SiRF, but are believed to work with SiRFFlash
+;       due to their similarity with other chips on the list.
+;
+; Last updated: February 16, 2006
+;
+;
+; DEVICE NAME   MANUFACTURER        DEVICE    MANUFACTURER  CAPACITY AND SECTOR MAP                                            DRIVER FILE
+;               NAME                CODE      CODE
+; ==============================================================================================================================================================
+  AM29LV200B    AMD                 0x22bf    0x01          0x40000(1*0x4000+2*0x2000+1*0x8000+3*0x10000)                      generic.bin
+  AM29LV400BB   AMD                 0x22ba    0x01          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  AM29LV400BT*  AMD                 0x22b9    0x01          0x80000(7*0x10000+1*0x8000+2*0x2000+1*0x4000)                      generic.bin
+  AM29DL400BB*  AMD                 0x220f    0x01          0x80000(1*0x4000+1*0x8000+4*0x2000+1*0x8000+1*0x4000+6*0x10000)    generic.bin
+  AM29DL400BT   AMD                 0x220c    0x01          0x80000(6*0x10000+1*0x4000+1*0x8000+4*0x2000+1*0x8000+1*0x4000)    generic.bin
+  AM29LV800BB   AMD                 0x225b    0x01          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  AM29LV800BT   AMD                 0x22da    0x01          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  AM29DL800BB   AMD                 0x22cb    0x01          0x100000(1*0x4000+1*0x8000+4*0x2000+1*0x8000+1*0x4000+14*0x10000)  generic.bin
+  AM29DL800BT   AMD                 0x224a    0x01          0x100000(14*0x10000+1*0x4000+1*0x8000+4*0x2000+1*0x8000+1*0x4000)  generic.bin
+  AM29LV160DB   AMD                 0x2249    0x01          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  AM29LV160DT   AMD                 0x22c4    0x01          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  AM29DL161DB*  AMD                 0x2239    0x01          0x200000(8*0x2000+31*0x10000)                                      generic.bin
+  AM29DL161DT*  AMD                 0x2236    0x01          0x200000(31*0x10000+8*0x2000)                                      generic.bin
+  AM29DL162DB*  AMD                 0x222e    0x01          0x200000(8*0x2000+31*0x10000)                                      generic.bin
+  AM29DL162DT   AMD                 0x222d    0x01          0x200000(31*0x10000+8*0x2000)                                      generic.bin
+  AM29DL163DB*  AMD                 0x222b    0x01          0x200000(8*0x2000+31*0x10000)                                      generic.bin
+  AM29DL163DT   AMD                 0x2228    0x01          0x200000(31*0x10000+8*0x2000)                                      generic.bin
+  AM29DL164DB*  AMD                 0x2235    0x01          0x200000(8*0x2000+31*0x10000)                                      generic.bin
+  AM29DL164DT   AMD                 0x2233    0x01          0x200000(31*0x10000+8*0x2000)                                      generic.bin
+  AM29LV320MB*  AMD                 0x227e    0x01          0x400000(8*0x2000+63*0x10000)                                      generic.bin DEVCOD2=0x221A  DEVCOD3=0x2200
+  AM29LV320MT   AMD                 0x227e    0x01          0x400000(63*0x10000+8*0x2000)                                      generic.bin DEVCOD2=0x221A  DEVCOD3=0x2201
+  AM29LV640MB   AMD                 0x227e    0x01          0x800000(8*0x2000+127*0x10000)                                     generic.bin DEVCOD2=0x2210  DEVCOD3=0x2200
+  AM29LV640MT   AMD                 0x227e    0x01          0x800000(127*0x10000+8*0x2000)                                     generic.bin DEVCOD2=0x2210  DEVCOD3=0x2201
+
+  A29L400UV     AMIC                0xb3b5    0x37          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  A29L400TV     AMIC                0xb334    0x37          0x80000(7*0x10000+1*0x8000+2*0x2000+1*0x4000)                      generic.bin
+  A29L800UV     AMIC                0xb39b    0x37          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  A29L800TV     AMIC                0xb31a    0x37          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  A29L160UV     AMIC                0xb329    0x37          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  A29L160TV     AMIC                0xb3a8    0x37          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+
+  AT49BV2048A   ATMEL               0x82      0x1f          0x40000(1*0x4000+2*0x2000+1*0x38000)                               generic.bin
+  AT49BV4096A   ATMEL               0x1692    0x161f        0x80000(1*0x4000+2*0x2000+1*0x78000)                               generic.bin
+  AT49BV802A    ATMEL               0xc1      0x1f          0x100000(8*0x2000+15*0x10000)                                      generic.bin
+  AT49BV802AT   ATMEL               0xc3      0x1f          0x100000(15*0x10000+8*0x2000)                                      generic.bin
+
+  EN29LV400B    EON                 0x22ba    0x7f          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  EN29LV400T    EON                 0x22b9    0x7f          0x80000(7*0x10000+1*0x8000+2*0x2000+1*0x4000)                      generic.bin
+  EN29LV800AB   EON                 0x225b    0x7f          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  EN29LV800AT   EON                 0x22da    0x7f          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+
+  29LV160BE     FUJITSU             0x2249    0x04          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  29LV160TE     FUJITSU             0x22c4    0x04          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+
+  28F800B3B     INTEL               0x8893    0x89          0x100000(8*0x2000+15*0x10000)                                      generica.bin
+  28F800B3T     INTEL               0x8892    0x89          0x100000(15*0x10000+8*0x2000)                                      generica.bin
+  28F800C3B     INTEL               0x88c1    0x89          0x100000(8*0x2000+15*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK
+  28F800C3T*    INTEL               0x88c0    0x89          0x100000(15*0x10000+8*0x2000)                                      generica.bin SOFT_LOCK_UNLOCK
+  28F160B3B*    INTEL               0x8891    0x89          0x200000(8*0x2000+31*0x10000)                                      generica.bin
+  28F160B3T*    INTEL               0x8890    0x89          0x200000(31*0x10000+8*0x2000)                                      generica.bin
+  28F160C3B     INTEL               0x88c3    0x89          0x200000(8*0x2000+31*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK
+  28F160C3T*    INTEL               0x88c2    0x89          0x200000(31*0x10000+8*0x2000)                                      generica.bin SOFT_LOCK_UNLOCK
+
+  MX29LV400B    MACRONIX            0x22ba    0xc2          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  MX29LV400T    MACRONIX            0x22b9    0xc2          0x80000(7*0x10000+1*0x8000+2*0x2000+1*0x4000)                      generic.bin
+  MX29LV800BB   MACRONIX            0x225b    0xc2          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  MX29LV800BT   MACRONIX            0x22da    0xc2          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  MX29LV160BB   MACRONIX            0x2249    0xc2          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  MX29LV160BT   MACRONIX            0x22c4    0xc2          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  MX69LW1641B*  MACRONIX            0xa1      0x1c          0x200000(8*0x8000+28*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK USE_PAGE256_WRITE      
+  MX69LW1641T   MACRONIX            0xa0      0x1c          0x200000(28*0x10000+8*0x8000)                                      generica.bin SOFT_LOCK_UNLOCK USE_PAGE256_WRITE
+  MX69LW3241B*  MACRONIX            0x21      0x1c          0x400000(8*0x2000+63*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK USE_PAGE256_WRITE      
+  MX69LW3241T*  MACRONIX            0x20      0x1c          0x400000(63*0x10000+8*0x2000)                                      generica.bin SOFT_LOCK_UNLOCK USE_PAGE256_WRITE
+
+  LE28FV4101T	SANYO               0x2       0x62          0x80000(256*0x800)                                                 generic.bin NO_ERROR_BITS
+  LE28FW8203T   SANYO               0x2d      0x62          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+
+  LH28F800BVE   SHARP               0x4b      0xb0          0x100000(8*0x2000+15*0x10000)                                      generica.bin
+  LH28F800BJHE  SHARP               0xed      0xb0          0x100000(8*0x2000+15*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK
+  LH28F800BJE   SHARP               0xec      0xb0          0x100000(15*0x10000+8*0x2000)                                      generica.bin SOFT_LOCK_UNLOCK
+  LH28F160BJHE  SHARP               0xe9      0xb0          0x200000(8*0x2000+31*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK
+
+  SST39VF400A	SST                 0x2780    0xbf          0x80000(128*0x1000)                                                generic.bin NO_ERROR_BITS
+
+  SST39WF400A	SST                 0x272f    0xbf          0x80000(128*0x1000)                                                generic.bin NO_ERROR_BITS
+  SST39VF800    SST                 0x2781    0xbf          0x100000(256*0x1000)                                               generic.bin NO_ERROR_BITS
+  SST39WF800A   SST                 0x273f    0xbf          0x100000(256*0x1000)                                               generic.bin NO_ERROR_BITS
+  SST39VF160    SST                 0x2782    0xbf          0x200000(512*0x1000)                                               generic.bin NO_ERROR_BITS
+  SST39VF1601   SST                 0x234b    0xbf          0x200000(512*0x1000)                                               generic.bin NO_ERROR_BITS
+  SST39VF1602*  SST                 0x234a    0xbf          0x200000(512*0x1000)                                               generic.bin NO_ERROR_BITS
+
+  M29W400BB	ST                  0xef      0x20          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  M29W400BT	ST                  0xee      0x20          0x80000(7*0x10000+1*0x8000+2*0x2000+1*0x4000)                      generic.bin
+  M29W800AB	ST                  0x5b      0x20          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  M29W800AT	ST                  0xd7      0x20          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  M29W800DB     ST                  0x225b    0x20          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
+  M29W800DT     ST                  0x22d7    0x20          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  M29W160EB     ST                  0x2249    0x20          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  M29W160ET     ST                  0x22c4    0x20          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+  M28W800CB     ST                  0x88cd    0x20          0x100000(8*0x2000+15*0x10000)                                      generica.bin SOFT_LOCK_UNLOCK                    
+  M28W800CT     ST                  0x88cc    0x20          0x100000(15*0x10000+8*0x2000)                                      generica.bin SOFT_LOCK_UNLOCK
+
+  TC58FVB400    TOSHIBA             0x4c      0x98          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  TC58FVB160AFT TOSHIBA             0x43      0x98          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
+  TC58FVT160AFT TOSHIBA             0xc2      0x98          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
+
+
+
