@@ -1,13 +1,16 @@
 # Rikaline-GPS-6010-Firmware-Fix
 Updated firmware for old Rikaline GPS-6010 SiRFstar II based serial GPS mouse and updated chiplist.txt for SiRFFlash utility to allow reprogramming the device. The SiRF firmware version fixed was 2.3.1.
 
-Problem:<br>
+Problem:
+
 A old Rikaline GPS I found, was acquiring satellites, giving correct position fixes, downloading almanacs, which could be dumped using the SiRFDemo utility, but discovered the almanacs were not being saved to flash upon first valid position fix. This resulted in VERY LONG times to initial position fix given the out-of-date factory supplied almanac was used at each and every startup. Replaced the memory backup battery - no effect - though at least my SiRFDemo configurations were now being saved to SRAM.
 
-Clue:<br>
+Clue:
+
 Then, when attempting to read out the binary firmware image, I also discovered the SiRFFlash utility failed to recognize the flash part. Suspected some connection here.
 
-Solution:<br>
+Solution:
+
 1. Determined which flash part was actually used by this particular GPS mouse. It was a Fujitsu MBM29LV400BC flash memory in my device.<br>
 2. Could SiRFFlash be corrected? Yes, it turns out flash parts are specified by SiRFFlash's "chiplist.txt" file. Added the device specification to chiplist.txt. The GPS's binary image could then be successfully dumped and saved.<br>
 3. Review binary image using HxD for clues to flash devices in the code. Luckily, it turned out that that the manufacturer tried to take into account different flash memory components could be used. A BIG help was that the flash device manufacturer names and part numbers were stored in ASCII in the GPS firmware image.<br>
@@ -21,5 +24,6 @@ My guess was the manufacturer might have produced this GPS mouse with a number o
 The fixed image and GPS is being successfully used in an APRS tracker. The image has also successfully be used to update a 2nd Rikaline GPS-6010 serial mouse from SiRF firmware version 2.2.0 to 2.3.1.
 
 Tools used:
+
 SiRFFlash and SiRFDemo - https://www.falcom.de/support/software-tools/sirf/ <br>
 HxD - https://mh-nexus.de/en/hxd/ <br>
