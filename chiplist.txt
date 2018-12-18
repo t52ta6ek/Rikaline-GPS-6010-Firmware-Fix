@@ -51,6 +51,8 @@
   EN29LV800AB   EON                 0x225b    0x7f          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
   EN29LV800AT   EON                 0x22da    0x7f          0x100000(15*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
 
+  MBM29LV400BC* FUJITSU             0x22ba    0x04          0x80000(1*0x4000+2*0x2000+1*0x8000+7*0x10000)                      generic.bin
+  MBM29LV800BA* FUJITSU             0x225b    0x04          0x100000(1*0x4000+2*0x2000+1*0x8000+15*0x10000)                    generic.bin
   29LV160BE     FUJITSU             0x2249    0x04          0x200000(1*0x4000+2*0x2000+1*0x8000+31*0x10000)                    generic.bin
   29LV160TE     FUJITSU             0x22c4    0x04          0x200000(31*0x10000+1*0x8000+2*0x2000+1*0x4000)                    generic.bin
 
