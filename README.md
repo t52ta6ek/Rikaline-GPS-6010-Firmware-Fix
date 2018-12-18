@@ -27,3 +27,4 @@ Tools used:
 
 SiRFFlash and SiRFDemo - https://www.falcom.de/support/software-tools/sirf/ <br>
 HxD - https://mh-nexus.de/en/hxd/ <br>
+Rikaline GPS-6010 manual - https://www.manualslib.com/manual/261000/Rikaline-Gps-6010.html <br>
