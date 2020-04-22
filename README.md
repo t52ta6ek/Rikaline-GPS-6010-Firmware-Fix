@@ -29,6 +29,8 @@ The fixed image and GPS has being successfully used in an APRS tracker these pas
 
 Tools used:
 
-SiRFFlash and SiRFDemo - https://www.falcom.de/support/software-tools/sirf/ <br>
+SiRFFlash and SiRFDemo* - http://gps.0xdc.ru/static/sirf/soft/win32/ <br>
 HxD - https://mh-nexus.de/en/hxd/ <br>
 Rikaline GPS-6010 manual - https://www.manualslib.com/manual/261000/Rikaline-Gps-6010.html <br>
+
+* The previous Falcom links to SiRFFlash and SiRFDemo apprently longer active.
