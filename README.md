@@ -1,17 +1,17 @@
 # Rikaline-GPS-6010-Firmware-Fix
 Updated firmware for old Rikaline GPS-6010 SiRFstarIIe/LP based serial GPS mouse and updated chiplist.txt for SiRFFlash utility to allow reprogramming other flash parts. The SiRF firmware version patched was SW Version 231.000.000.
 
-Problem:
+## Problem
 
 An old Rikaline GPS I found, was acquiring satellites, giving correct position fixes, downloading almanacs, which could be dumped using the SiRFDemo utility, but discovered the almanacs were not being saved to flash upon first valid position fix. This resulted in VERY LONG times to all initial position fixes. The out-of-date factory supplied almanac was used at each and every startup. Replaced the memory backup battery - no effect - though at least my SiRFDemo configurations were now being saved to SRAM.
 
 A 2nd Rikaline GPS-6010 was acquired and found to have the same problem.
 
-Clue:
+## Clue
 
 When attempting to read out the binary firmware image, I also discovered cases where the SiRFFlash utility either failed to recognize the flash part or recognized the flash part but the GPS was unable to commit the downloaded almanac to flash memory after a successful fix. Suspected some connection here.
 
-Solution:
+## Solution
 
 1. Determined which flash parts were actually used by the GPS mice. It was a Fujitsu MBM29LV400BC flash memory in one unit and a Macronix MX29LV400B in another unit.<br>
 2. Could SiRFFlash be corrected? Yes, it turns out flash programming parameters are specified by SiRFFlash's "chiplist.txt" file. Added the device specification to chiplist.txt. This can be found in SiRFDemo's installation directory. The GPS's binary image could then be successfully dumped and saved.<br>
@@ -27,7 +27,7 @@ My guess was the manufacturer might have produced this GPS mouse with a number o
 
 The fixed image and GPS has being successfully used in an APRS tracker these past few years. The image has also successfully been used to update a 2nd Rikaline GPS-6010 serial mouse from SiRF firmware version 2.2.0 to 2.3.1 while correcting its flash problem.
 
-Tools used:
+## Tools used
 
 SiRFFlash and SiRFDemo* - https://web.archive.org/web/20190831163705/https://www.falcom.de/support/software-tools/sirf <br>
 HxD - https://mh-nexus.de/en/hxd/ <br>
